@@ -1,0 +1,51 @@
+{
+    "appTitle": "Crappy Shadow Audio Visualizer",
+    "audioFiles": [
+        {
+            "name": "Space Colony Ark Act 1",
+            "file": "media/Space Colony Ark Act 1.mp3"
+        },
+        {
+            "name": "Sunset Heights Act 1",
+            "file": "media/Sunset Heights Act 1.mp3"
+        },
+        {
+            "name": "What I'm Made Of",
+            "file": "media/What I'm Made Of (Remix).mp3"
+        },
+        {
+            "name": "All Hail Shadow",
+            "file": "media/All Hail Shadow.mp3"
+        }
+    ],
+    "instructions": "Use the play button to start the music and enjoy the visualizations. Adjust the sliders for different effects.",
+    "spriteData": {
+        "Shadow": [
+            {
+                "fileName": "media/ShadowRun.png",
+                "frameRate": "50fps",
+                "x": 200,
+                "y": 200,
+                "scale": "4 times more"
+            }
+        ],
+        "VinylRecord": [
+            {
+                "fileName": "media/vinylrecord.png",
+                "frameRate": "60fps",
+                "x": 0,
+                "y": 0,
+                "scale": "0.2 times less"
+            }
+        ]
+        
+    },
+    "uiState": {
+        "showGradient": true,
+        "showBars": true,
+        "showCircles": false,
+        "showNoise": false,
+        "showInvert": false,
+        "showEmboss": false
+    }
+}

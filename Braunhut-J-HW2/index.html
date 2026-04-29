@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Audio Visualizer</title>
+  <link href="./styles/default-styles.css" type="text/css" rel="stylesheet" />
+  <script src="./src/loader.js" type="module"></script>
+</head>
+<body>
+<main>
+  <canvas width="800" height="400"></canvas>
+  <div id="controls">
+    <section>
+      <button id="btn-play" data-playing="no"></button>
+      <button id="fs-button">Full Screen</button>
+		
+      <label>Track: 
+        <select id="select-track">
+          <option value="media/Space Colony Ark Act 1.mp3" selected>Space Colony Ark</option>
+          <option value="media/Sunset Heights Act 1.mp3">Sunset Heights</option>
+          <option value="media/What I'm Made Of (Remix).mp3">What I'm Made Of</option>
+          <option value="media/All Hail Shadow.mp3">All Hail Shadow</option>
+        </select>
+      </label>
+    </section>
+		
+    <section>
+      Volume: <input type="range" id="slider-volume" min="0" max="2" value="1" step="0.01">
+      <span id="volumeLabel">???</span>
+    </section>
+
+    <section>
+      <span><input type="checkbox" id="cb-gradient" checked><label for="cb-gradient">Show Gradient</label></span>
+      <span><input type="checkbox" id="cb-bars" checked><label for="cb-bars">Show Bars</label></span>
+      <span><input type="checkbox" id="cb-circles" checked><label for="cb-circles">Show Circles</label></span>
+      <!-- we'll use this 4th checkbox soon! -->
+      <span><input type="checkbox" id="cb-noise"><label for="cb-noise">Show Noise</label></span>
+      <span><input type="checkbox" id="cb-invert"><label for="cb-invert">Show Invert</label></span>
+      <span><input type="checkbox" id="cb-emboss"><label for="cb-emboss">Show Emboss</label></span>
+      <span><input type="checkbox" id="cb-frequency" value="frequency"><label for="cb-frequency">Show Frequency Data</label></span>
+      <span><input type="checkbox" id="cb-time-domain" value="time-domain"><label for="cb-time-domain">Show Time Domain Data</label></span>
+      <p>
+        <span><label for="cb-highshelf">Highshelf Filter (Treble)</label><input type="checkbox" id="cb-highshelf"></span>
+        <span>0 <input type="range" min="0" max="100" value="0" id="slider-treble"> 100</span>
+        <span><label for="cb-lowshelf">Lowshelf Filter (Bass)</label><input type="checkbox" id="cb-lowshelf"></span>
+        <span>0 <input type="range" min="0" max="100" value="0" id="slider-bass"> 100</span>
+        <span><label for="cb-distortion">Distortion</label><input type="checkbox" id="cb-distortion"></span>
+        <span>0 <input type="range" min="0" max="100" value="0" id="slider-distortion"> 100</span>
+      </p>
+    </section>
+  </div>
+</main>
+</body>
+</html>

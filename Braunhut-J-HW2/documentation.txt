@@ -1,0 +1,23 @@
+AUDIO VISUALIZER:
+
+This is the last time I'm doing this, and I still feel like I'm going to get a failing grade, but at least I put in more of an effort this time.
+
+Changes in Controls: Sliders for Trebel and Bass Nodes
+
+Sprite Class names:
+
+- Sprite: Meant for Moving Sprites with frames of animation(i.e. Shadow The Hedgehog)
+- VinylRecord: Meant for Rotating Sprites(i.e. The Vinyl)
+
+JSON File additions:
+- The Title
+- The Sprite Data
+- The Audio Data
+- UI State Data
+- Instructions
+
+I would give myself a grade of 50% or 60% tbh. Tony would have probably given me a 30%, but in all the times I've tried doing this assignment and failing, I think
+I finally made an effort here. I didn't give myself enough time, but I took a lot of time to try and make a workable animated sprite of Shadow the Hedgehog on
+my visualizer. I never put that much effort in something in JS before.
+
+But since the requirements say to give me a grade between 0-15%, I give myself a 5% for just adding Triangles. Nothing too major.
